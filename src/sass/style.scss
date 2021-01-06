@@ -1,1 +1,96 @@
-@import 'normalize'; 
+
+//global
+
+
+/* Colors */
+$paragraph-color: #000000;
+$brand-main-color: #ff0000;
+
+/* Font sizes */
+$paragraph-font-size: 16px;
+
+/* Fonts */
+$brand-font: "Open Sans", Helvetica, Arial;
+$paragraph-font:  'Dancing Script', cursive;
+
+//side bar//
+
+.side-bar {
+
+  background-color: $paragraph-color;
+  position: fixed;
+  float: left;
+  height: 100%;
+  z-index: 10;
+  margin: 0 ;
+  left: 0;
+
+}
+
+.sidebar-top {
+  display: flex;
+  display: inline-block;
+  height: 60px;
+}
+
+.sidebar-title {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+
+}
+
+.menu-bottom {
+  color: white;
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+.icon-sidebar {
+  height: 15px;
+  width: 15px;
+  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  margin-right: 10px;
+}
+
+.sidebar-list-menu li {
+  list-style-type: none;
+  padding: 40px;
+
+}
+
+.sidebar-list-menu li:hover .icon-sidebar {
+  filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
+
+}
+
+.sidebar-list-menu li:hover a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-list-menu li:hover {
+  background-color: rgb(44, 44, 44);
+  border-left: 5px solid red;
+
+}
+
+.sidebar-list-menu a {
+  color:gray;
+  font-size: 15px;
+  width: 100%;
+
+}
+
+//novbar
+
+.navbar {
+  border: lightgrey solid 1px;
+  height: 60px;
+  //z-index: 5;
+  position: fixed;
+  top: 0;
+
+}
