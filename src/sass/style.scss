@@ -1,6 +1,9 @@
 
 //global
 
+body {
+  background-color: rgb(90, 88, 88);
+}
 
 /* Colors */
 $paragraph-color: #000000;
@@ -16,36 +19,44 @@ $paragraph-font:  'Dancing Script', cursive;
 //side bar//
 
 .side-bar {
-
   background-color: $paragraph-color;
-  position: fixed;
+  //position: fixed;
   float: left;
-  height: 100%;
+  height: auto;
   z-index: 10;
   margin: 0 ;
   left: 0;
-
+  bottom: 0;
+  width:100%;
+  padding-right: 0;
+  padding-left: 25px;
 }
 
 .sidebar-top {
   display: flex;
   display: inline-block;
   height: 60px;
+  width: 100%;
 }
 
 .sidebar-title {
   font-family: 'Dancing Script', cursive;
   color: white;
   display: inline-block;
-  font-size: 15px;
-
+  font-size: 10px;
+  margin-left: 35px;
 }
 
 .menu-bottom {
-  color: white;
+  color: grey;
   display: inline-block;
   margin-left: 20px;
+  transition: 1s ease-in-out;
 
+}
+
+.menu-bottom:hover {
+  color: red;
 }
 
 .icon-sidebar {
@@ -55,15 +66,18 @@ $paragraph-font:  'Dancing Script', cursive;
   margin-right: 10px;
 }
 
+.sidebar-list-menu {
+  padding-left: 0;
+}
+
 .sidebar-list-menu li {
   list-style-type: none;
   padding: 40px;
-
+  transition: 0.5s ease-in-out;
 }
 
 .sidebar-list-menu li:hover .icon-sidebar {
   filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
-
 }
 
 .sidebar-list-menu li:hover a {
@@ -74,23 +88,49 @@ $paragraph-font:  'Dancing Script', cursive;
 .sidebar-list-menu li:hover {
   background-color: rgb(44, 44, 44);
   border-left: 5px solid red;
-
+  transition: 0.5s ease-in-out;
 }
 
 .sidebar-list-menu a {
-  color:gray;
+  color: gray;
   font-size: 15px;
   width: 100%;
+}
+
+.menager {
+  border-top: gray solid 0.2px;
+  background-color: black;
+}
+
+.manager-title h4 {
+  color: gray;
+  padding: 25px;
+  font-size: 15px;
 
 }
 
+.manager-profile {
+  padding: 15px;
+}
+
+
+.pic-profile {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.manager-profile a {
+ margin-left: 15px;
+
+}
 //novbar
 
 .navbar {
-  border: lightgrey solid 1px;
+  border: gray 0.5px solid;
   height: 60px;
-  //z-index: 5;
-  position: fixed;
   top: 0;
+  max-width: 100%;
+  position: fixed;
 
 }
