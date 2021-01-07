@@ -27,7 +27,7 @@ $paragraph-font:  'Dancing Script', cursive;
   margin: 0 ;
   left: 0;
   bottom: 0;
-  top:0;
+  top: 0;
   width: 100%;
   padding-right: 0;
   padding-left: 25px;
@@ -195,6 +195,7 @@ $paragraph-font:  'Dancing Script', cursive;
 .navbar .col-1 {
   border-left: grey solid 0.5px;
   height: 60px;
+
 }
 
 .small {
@@ -202,7 +203,16 @@ $paragraph-font:  'Dancing Script', cursive;
   width: 15px;
 }
 
-.log-out img {
+.col-1 a {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
+}
+
+.col-2 a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
