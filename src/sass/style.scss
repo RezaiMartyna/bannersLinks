@@ -20,13 +20,14 @@ $paragraph-font:  'Dancing Script', cursive;
 
 .side-bar {
   background-color: $paragraph-color;
-  //position: fixed;
+  position: fixed;
   float: left;
-  height: auto;
+  max-height: 100%;
   z-index: 10;
   margin: 0 ;
   left: 0;
   bottom: 0;
+  top:0;
   width: 100%;
   padding-right: 0;
   padding-left: 25px;
@@ -43,8 +44,8 @@ $paragraph-font:  'Dancing Script', cursive;
   font-family: 'Dancing Script', cursive;
   color: white;
   display: inline-block;
-  font-size: 10px;
-  margin-left: 35px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .menu-bottom {
@@ -72,7 +73,7 @@ $paragraph-font:  'Dancing Script', cursive;
 
 .sidebar-list-menu li {
   list-style-type: none;
-  padding: 40px;
+  padding: 20px;
   transition: 0.5s ease-in-out;
 }
 
@@ -137,7 +138,7 @@ $paragraph-font:  'Dancing Script', cursive;
   height: 60px;
   margin-top: 0;
   padding-top: 0;
-
+  right: 0;
 }
 
 .navbar-container {
@@ -147,9 +148,10 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .icon-navbar {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+
 }
 
 .navbar a {
@@ -182,12 +184,25 @@ $paragraph-font:  'Dancing Script', cursive;
 .wallet {
   float: left;
   display: inline;
+  height: 60px;
 }
 
 .navbar .col-2 {
   border-left: grey solid 0.5px;
+  height: 60px;
 }
 
 .navbar .col-1 {
   border-left: grey solid 0.5px;
+  height: 60px;
+}
+
+.small {
+  height: 15px;
+  width: 15px;
+}
+
+.log-out img {
+  margin-left: auto;
+  margin-right: auto;
 }
