@@ -27,7 +27,7 @@ $paragraph-font:  'Dancing Script', cursive;
   margin: 0 ;
   left: 0;
   bottom: 0;
-  width:100%;
+  width: 100%;
   padding-right: 0;
   padding-left: 25px;
 }
@@ -100,6 +100,7 @@ $paragraph-font:  'Dancing Script', cursive;
 .menager {
   border-top: gray solid 0.2px;
   background-color: black;
+
 }
 
 .manager-title h4 {
@@ -121,16 +122,41 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .manager-profile a {
- margin-left: 15px;
-
+  margin-left: 15px;
 }
+
+
 //novbar
 
 .navbar {
   border: gray 0.5px solid;
-  height: 60px;
   top: 0;
   max-width: 100%;
   position: fixed;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+}
 
+.icon-navbar {
+  height: 15px;
+  width: 15px;
+  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: grey;
+  text-align: center;
+  //padding: 5px 5px;
+  text-decoration: none;
+  font-size: 15px;
+  border-left: grey solid 0.5px;
+  height: 60px;
+  top:0;
+}
+
+.wallet h5 {
+  color: grey;
 }
