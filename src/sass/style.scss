@@ -223,32 +223,56 @@ $paragraph-font:  'Dancing Script', cursive;
   background-color: white;
   margin-left: 305px;
   margin-top: 75px;
-  right: 0;
-  max-width: 100%;
-  height: auto;
   padding-left: 0;
+  padding-right: 0;
 
 }
 
 .content-name {
-  border-bottom: rgb(177, 174, 174) solid 0.5px;
+  border-bottom: lightgray solid 0.5px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   color: rgb(182, 180, 180);
+
+
+
 }
 
 .calender-input {
-  border-bottom: rgb(177, 174, 174) solid 0.5px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-
+  border-bottom: lightgray solid 0.5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: rgb(182, 180, 180);
+  position: relative;
+  width: 100%;
+
 }
 
-.calender-input input {
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding-top: 20px;
 
+}
+
+input {
+  border: none;
+  padding: 5px;
+}
+
+.input-border {
+  border: lightgray solid 0.5px;
+  border-radius: 3px;
+
+}
+
+input .left {
+  border-right: lightgray solid 0.5px;
 }
 
 .calender-input img {
@@ -257,26 +281,63 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .calender-input a  {
-  background-color: red;
-  border: red solid 6px;
+  background-color: orange;
+  border: orange solid 6px;
   border-radius: 4px;
   margin-left: 20px;
+  float: right;
+
 
 }
 
-.calender-input a img {
+.statistics {
+  padding-top: 40px;
+  padding-bottom: 40px;
 
 }
+
+.table-statistic {
+
+
+}
+
+.table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
 
 .cell {
   padding-top: 20px;
-  border-bottom: solid 1px rgba(33,36,44,0.08)
+}
 
+.cell-right {
+  text-align: right;
 }
 
 .cell h5 {
-  //border-bottom: grey solid 0.5px;
-  display:inline-block;
+  border-bottom:lightgray solid 0.5px;
+  display: inline-block;
   margin-left: 30px;
 }
 
+.name {
+  color: lightgray;
+}
+
+.chart {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.chart h5 {
+  color: lightgray;
+  margin-left: 100px;
+}
+.chart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
