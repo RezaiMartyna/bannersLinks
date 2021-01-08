@@ -157,7 +157,6 @@ $paragraph-font:  'Dancing Script', cursive;
 .navbar a {
   color: grey;
   text-align: center;
-  //padding: 5px 5px;
   text-decoration: none;
   font-size: 15px;
   height: 60px;
@@ -224,6 +223,8 @@ $paragraph-font:  'Dancing Script', cursive;
   margin-top: 75px;
   padding-left: 0;
   padding-right: 0;
+  margin-right: 10px;
+
 }
 
 .content-name {
@@ -325,6 +326,9 @@ input .left {
   margin-right: auto;
 }
 
+.navigation-bottom {
+  display: none;
+}
 //media
 
 @media (max-width: 720px) {
@@ -332,20 +336,57 @@ input .left {
     display: none;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .content {
     background-color: white;
     margin-left: 10px;
-    margin-top: 70px;
+    margin-top: 10px;
     padding-left: 0;
     padding-right: 0px;
     margin-right: 10px;
     max-width: max-content;
   }
 
-
-
   .chart img {
     max-width: 100%;
   }
+
+  .navigation-bottom {
+    border:lightgray 0.5px solid;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: inline;
+    max-width: 100%;
+    position: fixed;
+    height: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .navigation-bottom .col {
+    border-right: lightgray 0.5px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .icon-navigation {
+    height: 15px;
+    width: 15px;
+    filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  }
+
+  .navigation-bottom .col:hover a {
+    filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+    transition: 0.5s ease-in-out;
+
+  }
+
 }
 
