@@ -3,6 +3,7 @@
 
 body {
   background-color: rgb(201, 201, 201);
+  max-width: 100%;
 }
 
 /* Colors */
@@ -49,7 +50,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .menu-bottom {
-  color:lightgray;
+  color: lightgray;
   display: inline-block;
   margin-left: 20px;
   transition: 1s ease-in-out;
@@ -87,7 +88,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .sidebar-list-menu li:hover {
-  background-color:grey;
+  background-color: grey;
   border-left: 5px solid red;
   transition: 0.5s ease-in-out;
 }
@@ -105,7 +106,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .manager-title h4 {
-  color:lightgray;
+  color: lightgray;
   padding: 25px;
   font-size: 15px;
 
@@ -165,7 +166,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .navbar a {
-  color:lightgray;
+  color: lightgray;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
@@ -175,17 +176,17 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .navbar .col-2:hover a {
-  color:white;
+  color: white;
 }
 
 .navbar .col-2:hover {
-  background-color:lightgray;
+  background-color: lightgray;
   transition: 0.5s ease-in-out;
   border-left: solid red 3px;
 }
 
 .navbar .col-1:hover {
-  background-color:lightgray;
+  background-color: lightgray;
   transition: 0.5s ease-in-out;
   border-left: solid red 3px;
 }
@@ -202,7 +203,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .wallet:hover h5 {
-  color:white
+  color: white;
 }
 
 .wallet img {
@@ -217,7 +218,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .navbar .col-2 {
-  border-left:lightgray solid 0.5px;
+  border-left: lightgray solid 0.5px;
   height: 60px;
 }
 
@@ -368,7 +369,7 @@ input .left {
 }
 //media
 
-@media (max-width: 720px) {
+@media (max-width: 425px) {
   .side-bar {
     display: none;
   }
@@ -379,16 +380,43 @@ input .left {
 
   .content {
     background-color: white;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left:0px;
+    margin-top: 0px;
     padding-left: 0;
     padding-right: 0px;
-    margin-right: 10px;
+    margin-right: 0px;
     max-width: max-content;
   }
 
   .chart img {
     max-width: 100%;
+  }
+
+  input {
+    width:max-content;
+    padding-left: 10px;
+    height: 15px;
+  }
+
+  .input-border {
+   width: 60%;
+  }
+
+  .cell h5 {
+    font-size: 15px;
+  }
+
+  .cell {
+    padding-top: 10px;
+  }
+
+  .statistics {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .chart {
+    padding-top: 10px;
   }
 
   .navigation-bottom {
@@ -426,4 +454,7 @@ input .left {
   }
 
 }
+
+
+
 
