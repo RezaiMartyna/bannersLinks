@@ -195,7 +195,6 @@ $paragraph-font:  'Dancing Script', cursive;
 .navbar .col-1 {
   border-left: grey solid 0.5px;
   height: 60px;
-
 }
 
 .small {
@@ -225,7 +224,6 @@ $paragraph-font:  'Dancing Script', cursive;
   margin-top: 75px;
   padding-left: 0;
   padding-right: 0;
-
 }
 
 .content-name {
@@ -234,9 +232,6 @@ $paragraph-font:  'Dancing Script', cursive;
   padding-bottom: 10px;
   padding-left: 10px;
   color: rgb(182, 180, 180);
-
-
-
 }
 
 .calender-input {
@@ -246,7 +241,6 @@ $paragraph-font:  'Dancing Script', cursive;
   color: rgb(182, 180, 180);
   position: relative;
   width: 100%;
-
 }
 
 .center {
@@ -257,7 +251,6 @@ $paragraph-font:  'Dancing Script', cursive;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   padding-top: 20px;
-
 }
 
 input {
@@ -268,7 +261,6 @@ input {
 .input-border {
   border: lightgray solid 0.5px;
   border-radius: 3px;
-
 }
 
 input .left {
@@ -286,27 +278,17 @@ input .left {
   border-radius: 4px;
   margin-left: 20px;
   float: right;
-
-
 }
 
 .statistics {
   padding-top: 40px;
   padding-bottom: 40px;
-
-}
-
-.table-statistic {
-
-
 }
 
 .table {
   margin-left: 0;
   margin-right: 0;
 }
-
-
 
 .cell {
   padding-top: 20px;
@@ -317,7 +299,7 @@ input .left {
 }
 
 .cell h5 {
-  border-bottom:lightgray solid 0.5px;
+  border-bottom: lightgray solid 0.5px;
   display: inline-block;
   margin-left: 30px;
 }
@@ -336,8 +318,34 @@ input .left {
   color: lightgray;
   margin-left: 100px;
 }
+
 .chart img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+//media
+
+@media (max-width: 720px) {
+  .side-bar {
+    display: none;
+  }
+
+  .content {
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 70px;
+    padding-left: 0;
+    padding-right: 0px;
+    margin-right: 10px;
+    max-width: max-content;
+  }
+
+
+
+  .chart img {
+    max-width: 100%;
+  }
+}
+
