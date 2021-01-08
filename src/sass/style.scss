@@ -49,7 +49,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .menu-bottom {
-  color: grey;
+  color:lightgray;
   display: inline-block;
   margin-left: 20px;
   transition: 1s ease-in-out;
@@ -87,25 +87,25 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .sidebar-list-menu li:hover {
-  background-color: rgb(44, 44, 44);
+  background-color:grey;
   border-left: 5px solid red;
   transition: 0.5s ease-in-out;
 }
 
 .sidebar-list-menu a {
-  color: gray;
+  color: lightgray;
   font-size: 15px;
   width: 100%;
 }
 
 .menager {
-  border-top: gray solid 0.2px;
+  border-top: lightgray solid 0.2px;
   background-color: black;
 
 }
 
 .manager-title h4 {
-  color: gray;
+  color:lightgray;
   padding: 25px;
   font-size: 15px;
 
@@ -130,7 +130,7 @@ $paragraph-font:  'Dancing Script', cursive;
 //novbar
 
 .navbar {
-  border: gray 0.5px solid;
+  border: lightgrey 0.5px solid;
   top: 0;
   max-width: 100%;
   position: fixed;
@@ -154,8 +154,18 @@ $paragraph-font:  'Dancing Script', cursive;
 
 }
 
+.col-1:hover .icon-navbar {
+  filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  transition: 0.5s ease-in-out;
+}
+
+.col-2:hover .icon-navbar {
+  filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  transition: 0.5s ease-in-out;
+}
+
 .navbar a {
-  color: grey;
+  color:lightgray;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
@@ -164,15 +174,35 @@ $paragraph-font:  'Dancing Script', cursive;
   margin-top: 15px;
 }
 
+.navbar .col-2:hover a {
+  color:white;
+}
+
+.navbar .col-2:hover {
+  background-color:lightgray;
+  transition: 0.5s ease-in-out;
+  border-left: solid red 3px;
+}
+
+.navbar .col-1:hover {
+  background-color:lightgray;
+  transition: 0.5s ease-in-out;
+  border-left: solid red 3px;
+}
+
 .navbar-category {
   max-width: 100%;
   right: 0;
 }
 
 .wallet h5 {
-  color: grey;
+  color: lightgray;
   display: inline;
   margin-left: 10px;
+}
+
+.wallet:hover h5 {
+  color:white
 }
 
 .wallet img {
@@ -187,12 +217,12 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .navbar .col-2 {
-  border-left: grey solid 0.5px;
+  border-left:lightgray solid 0.5px;
   height: 60px;
 }
 
 .navbar .col-1 {
-  border-left: grey solid 0.5px;
+  border-left: lightgray solid 0.5px;
   height: 60px;
 }
 
@@ -281,6 +311,13 @@ input .left {
   float: right;
 }
 
+.calender-input a:hover {
+  background-color: lightgreen;
+  border: lightgreen solid 6px;
+  transition: ease-in-out 0.5s;
+
+}
+
 .statistics {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -355,7 +392,7 @@ input .left {
   }
 
   .navigation-bottom {
-    border:lightgray 0.5px solid;
+    border: lightgray 0.5px solid;
     bottom: 0;
     left: 0;
     right: 0;
