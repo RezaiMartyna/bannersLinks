@@ -250,11 +250,11 @@ $paragraph-font:  'Dancing Script', cursive;
 
 .content {
   background-color: white;
-  margin-left: 305px;
-  margin-top: 75px;
+
+  margin-top: 85px;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 10px;
+
 
 }
 
@@ -455,7 +455,7 @@ input .left {
 
 @media (min-width: 426px) and (max-width: 768px) {
   .content {
-    margin-left: 200px;
+
     max-width: max-content;
   }
 
@@ -469,7 +469,29 @@ input .left {
 
   .side-bar {
     padding-left: 0;
-    max-width: max-content;
+    //max-width: max-content;
+  }
+
+  .side-bar a {
+    font-size: 10px;
+  }
+
+  .sidebar-title h3 {
+    font-size: 20px;
+  }
+
+  .manager-title {
+   height: 30px;
+
+  }
+
+  .manager-title h4 {
+    font-size: 10px;
+  }
+
+  .pic-profile {
+    width: 15px;
+    height: 15px;
   }
 
   .navbar {
