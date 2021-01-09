@@ -380,7 +380,7 @@ input .left {
 
   .content {
     background-color: white;
-    margin-left:0px;
+    margin-left: 0px;
     margin-top: 0px;
     padding-left: 0;
     padding-right: 0px;
@@ -393,13 +393,13 @@ input .left {
   }
 
   input {
-    width:max-content;
+    width: max-content;
     padding-left: 10px;
     height: 15px;
   }
 
   .input-border {
-   width: 60%;
+    width: 60%;
   }
 
   .cell h5 {
@@ -450,11 +450,30 @@ input .left {
   .navigation-bottom .col:hover a {
     filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
     transition: 0.5s ease-in-out;
-
   }
-
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .content {
+    margin-left: 200px;
+    max-width: max-content;
+  }
 
+  .chart img {
+    max-width: 100%;
+  }
 
+  .navbar h5 {
+    display: none;
+  }
 
+  .side-bar {
+    padding-left: 0;
+    max-width: max-content;
+  }
+
+  .navbar {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
