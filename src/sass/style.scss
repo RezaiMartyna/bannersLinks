@@ -9,6 +9,7 @@ body {
 /* Colors */
 $paragraph-color: #000000;
 $brand-main-color: #ff0000;
+$sidebar-bacground:  rgb(31, 30, 30);
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -20,7 +21,7 @@ $paragraph-font:  'Dancing Script', cursive;
 //side bar//
 
 .side-bar {
-  background-color: $paragraph-color;
+  background-color: $sidebar-bacground;
   position: fixed;
   float: left;
   max-height: 100%;
@@ -91,7 +92,7 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .sidebar-list-menu li:hover {
-  background-color: grey;
+  background-color: rgb(65, 65, 65);
   border-left: 3px solid red;
   transition: 0.5s ease-in-out;
 }
@@ -104,7 +105,7 @@ $paragraph-font:  'Dancing Script', cursive;
 
 .menager {
   border-top: gray solid 0.1px;
-  background-color: black;
+  background-color: $sidebar-bacground;
 }
 
 .manager-title h4 {
@@ -149,9 +150,7 @@ $paragraph-font:  'Dancing Script', cursive;
   padding: 0;
   right: 0;
   z-index: 5;
-
 }
-
 
 .navbar-container {
   right: 0;
