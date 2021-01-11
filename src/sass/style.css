@@ -1,35 +1,18 @@
-
-//global
-
 body {
   background-color: #eeecec;
   max-width: 100%;
 }
 
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
-$sidebar-bacground: #272727;
-$border-color: #D3D3D3;
-
-
-
 /* Font sizes */
-$paragraph-font-size: 16px;
-
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font:  'Dancing Script', cursive;
-
-//side bar//
-
 .side-bar {
-  background-color: $sidebar-bacground;
+  background-color: #272727;
   position: fixed;
   float: left;
   max-height: 100%;
   z-index: 10;
-  margin: 0 ;
+  margin: 0;
   left: 0;
   bottom: 0;
   top: 0;
@@ -39,6 +22,8 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .sidebar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: inline-block;
   height: 60px;
@@ -48,7 +33,7 @@ $paragraph-font:  'Dancing Script', cursive;
 
 .sidebar-title {
   font-family: 'Dancing Script', cursive;
-  color:#FFFFFF;
+  color: #FFFFFF;
   display: inline-block;
   font-size: 20px;
 }
@@ -57,18 +42,20 @@ $paragraph-font:  'Dancing Script', cursive;
   color: #808080;
   display: inline-block;
   margin-left: 30px;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   font-size: 20px;
 }
 
 .menu-bottom:hover {
-  color: rgb(236, 99, 35);
+  color: #ec6323;
 }
 
 .icon-sidebar {
   height: 15px;
   width: 15px;
-  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  -webkit-filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+          filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
   margin-right: 10px;
 }
 
@@ -83,11 +70,13 @@ $paragraph-font:  'Dancing Script', cursive;
   padding-top: 8px;
   padding-left: 20px;
   border-left: 3px solid transparent;
+  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
 
 .sidebar-list-menu li:hover .icon-sidebar {
-  filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
+  -webkit-filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
+          filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
 }
 
 .sidebar-list-menu li:hover a {
@@ -96,9 +85,8 @@ $paragraph-font:  'Dancing Script', cursive;
 }
 
 .sidebar-list-menu li:hover {
-  background-color: rgb(65, 65, 65);
+  background-color: #414141;
   border-left: red 3px solid;
-
 }
 
 .sidebar-list-menu a {
@@ -109,7 +97,7 @@ $paragraph-font:  'Dancing Script', cursive;
 
 .menager {
   border-top: #808080 solid 0.1px;
-  background-color: $sidebar-bacground;
+  background-color: #272727;
 }
 
 .manager-title h4 {
@@ -123,7 +111,6 @@ $paragraph-font:  'Dancing Script', cursive;
   padding: 17px;
 }
 
-
 .pic-profile {
   border-radius: 50%;
   width: 45px;
@@ -135,27 +122,25 @@ $paragraph-font:  'Dancing Script', cursive;
   font-size: 14px;
 }
 
-
-//novbar
-
 .navbar-row {
   width: 100%;
   margin-right: 0;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navbar {
-  border: $border-color 0.5px solid;
+  border: #D3D3D3 0.5px solid;
   top: 0;
   max-width: 100%;
   position: fixed;
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   height: 60px;
   margin-top: 0;
   padding: 0;
   right: 0;
   z-index: 5;
-
 }
 
 .navbar-container {
@@ -163,27 +148,30 @@ $paragraph-font:  'Dancing Script', cursive;
   padding-right: 0;
   margin-right: 0;
   max-width: 100%;
-
 }
 
 .icon-navbar {
   height: 20px;
   width: 20px;
-  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  -webkit-filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+          filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
 }
 
 body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > div > div:nth-child(3) > a > img {
   margin-right: 10px;
 }
 
-
 .col-1:hover .icon-navbar {
-  filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  -webkit-filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+          filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .col-2:hover .icon-navbar {
-  filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  -webkit-filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+          filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -201,14 +189,15 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
 }
 
 .navbar .col-2:hover {
-  background-color: $border-color;
+  background-color: #D3D3D3;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .navbar .col-1:hover {
-  background-color: $border-color;
+  background-color: #D3D3D3;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-
 }
 
 .navbar-category {
@@ -231,22 +220,23 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
   margin-right: 10px;
 }
 
-
 .navbar .col-2 {
-  border-left: $border-color solid 0.5px;
+  border-left: #D3D3D3 solid 0.5px;
   height: 59px;
   padding: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
-
 
 .navbar .col-1 {
-  border-left: $border-color solid 0.5px;
+  border-left: #D3D3D3 solid 0.5px;
   height: 59px;
   padding: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
-
 
 .small {
   height: 10px;
@@ -256,6 +246,8 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
 }
 
 .col-1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -266,6 +258,8 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
 }
 
 .col-2 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -274,8 +268,6 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
   padding-left: 20px;
   padding-right: 20px;
 }
-
-//contant
 
 .full-page {
   margin: 0;
@@ -305,34 +297,38 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
   padding-right: 0;
   max-width: 100%;
   margin-top: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content-name {
-  border-bottom: $border-color solid 0.5px;
+  border-bottom: #D3D3D3 solid 0.5px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
-  color: rgb(182, 180, 180);
+  color: #b6b4b4;
 }
 
 .calender-input {
-  border-bottom: $border-color solid 0.5px;
+  border-bottom: #D3D3D3 solid 0.5px;
   padding-top: 40px;
   padding-bottom: 40px;
-  color: rgb(182, 180, 180);
+  color: #b6b4b4;
   width: 100%;
 }
 
 .center {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 input {
   padding: 5px;
-  border: $border-color solid 0.5px;
+  border: #D3D3D3 solid 0.5px;
 }
 
 .input-border {
@@ -348,17 +344,18 @@ input {
   width: 20px;
 }
 
-.calender-input a  {
+.calender-input a {
   background-color: #eead20;
-  border:#eead20 solid 6px;
+  border: #eead20 solid 6px;
   border-radius: 4px;
   margin-left: 20px;
   float: right;
 }
 
 .calender-input a:hover {
-  background-color:  #ff0000;
-  border:  #ff0000 solid 6px;
+  background-color: #ff0000;
+  border: #ff0000 solid 6px;
+  -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
@@ -381,13 +378,13 @@ input {
 }
 
 .cell h5 {
-  border-bottom: $border-color solid 0.5px;
+  border-bottom: #D3D3D3 solid 0.5px;
   display: inline-block;
   margin-left: 30px;
 }
 
 .name {
-  color: $border-color;
+  color: #D3D3D3;
 }
 
 .chart {
@@ -395,9 +392,8 @@ input {
   padding-bottom: 40px;
 }
 
-
 .chart h5 {
-  color: $border-color;
+  color: #D3D3D3;
   margin-left: 100px;
 }
 
@@ -410,8 +406,6 @@ input {
 .navigation-bottom {
   display: none;
 }
-
-//links
 
 .btn .fa-plus {
   background-color: #eead20;
@@ -430,5 +424,4 @@ input {
 i.fa.fa-plus::before {
   margin-right: 10px;
 }
-
-
+/*# sourceMappingURL=style.css.map */
