@@ -55,7 +55,7 @@ body {
   height: 15px;
   width: 15px;
   -webkit-filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
-          filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
   margin-right: 10px;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .sidebar-list-menu li:hover .icon-sidebar {
   -webkit-filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
-          filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
+  filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(253deg) brightness(105%) contrast(100%);
 }
 
 .sidebar-list-menu li:hover a {
@@ -126,8 +126,8 @@ body {
   width: 100%;
   margin-right: 0;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .navbar {
@@ -154,7 +154,7 @@ body {
   height: 20px;
   width: 20px;
   -webkit-filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
-          filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+  filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
 }
 
 body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > div > div:nth-child(3) > a > img {
@@ -163,14 +163,14 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
 
 .col-1:hover .icon-navbar {
   -webkit-filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
-          filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .col-2:hover .icon-navbar {
   -webkit-filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
-          filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+  filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -297,7 +297,7 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
   max-width: 100%;
   margin-top: 25px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 20px;
 }
 
@@ -319,8 +319,8 @@ body > div:nth-child(3) > div > div.navbar.col-sm-12.col-lg-10.col-md-9 > div > 
 
 .center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,8 +428,8 @@ i.fa.fa-plus::before {
 
 .links {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -438,8 +438,8 @@ i.fa.fa-plus::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-top: solid 0.5px #c0c0c0;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -475,7 +475,7 @@ i.fa.fa-plus::before {
 
 .list-of-links .copy-link {
   -webkit-filter: invert(18%) sepia(78%) saturate(7191%) hue-rotate(357deg) brightness(102%) contrast(113%);
-          filter: invert(18%) sepia(78%) saturate(7191%) hue-rotate(357deg) brightness(102%) contrast(113%);
+  filter: invert(18%) sepia(78%) saturate(7191%) hue-rotate(357deg) brightness(102%) contrast(113%);
 }
 
 .add-new-btn {
@@ -483,8 +483,8 @@ i.fa.fa-plus::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -492,15 +492,19 @@ i.fa.fa-plus::before {
   body {
     max-width: 100%;
   }
+
   .side-bar {
     display: none;
   }
+
   .navbar {
     display: none;
   }
+
   .row {
     margin: 0;
   }
+
   .full-page {
     padding: 0;
     margin: 0;
@@ -508,6 +512,7 @@ i.fa.fa-plus::before {
     margin-top: auto;
     max-width: 100%;
   }
+
   .content {
     background-color: #FFFFFF;
     margin-left: 0px;
@@ -517,30 +522,38 @@ i.fa.fa-plus::before {
     margin-right: 0px;
     max-width: 100%;
   }
+
   .chart img {
     max-width: 100%;
   }
+
   input {
     width: 170px;
     padding-left: 10px;
     height: 15px;
   }
+
   .input-border {
     width: 60%;
   }
+
   .cell h5 {
     font-size: 15px;
   }
+
   .cell {
     padding-top: 10px;
   }
+
   .statistics {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .chart {
     padding-top: 10px;
   }
+
   .navigation-bottom {
     border: #D3D3D3 0.5px solid;
     bottom: 0;
@@ -549,19 +562,22 @@ i.fa.fa-plus::before {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     position: fixed;
     height: 40px;
     padding: 0;
     margin-top: 10px;
   }
+
   .navigation-bottom img {
     padding: 0;
     margin: 0;
   }
+
   .navigation-bottom .hamburger {
     padding-top: 8px;
   }
+
   .navigation-bottom .col {
     border-right: #D3D3D3 0.5px solid;
     display: -webkit-box;
@@ -572,50 +588,60 @@ i.fa.fa-plus::before {
     padding-left: 0;
     padding-right: 0;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .icon-navigation {
     height: 15px;
     width: 15px;
     -webkit-filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
-            filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+    filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
   }
+
   .navigation-bottom .col:hover a {
     -webkit-filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
-            filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+    filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
+
   .list-of-links li {
     margin-left: 0;
     margin-right: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .list-of-links li p {
     font-size: 10px;
     font-weight: 300;
   }
+
   .list-of-links li a {
     font-size: 10px;
   }
+
   .list-of-links li img {
     width: 15px;
     height: 15px;
   }
+
   .list-of-links {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 0;
   }
+
   .btn .fa-plus {
     font-size: 10px;
     margin-top: 0;
   }
+
   .last-btn {
     padding-bottom: 20px;
   }
+
   .refresh-next {
     padding-top: 5px;
   }
@@ -625,15 +651,19 @@ i.fa.fa-plus::before {
   body {
     max-width: 100%;
   }
+
   .side-bar {
     display: none;
   }
+
   .navbar {
     display: none;
   }
+
   .row {
     margin: 0;
   }
+
   .full-page {
     padding: 0;
     margin: 0;
@@ -641,6 +671,7 @@ i.fa.fa-plus::before {
     margin-top: auto;
     max-width: 100%;
   }
+
   .content {
     background-color: #FFFFFF;
     margin-left: 0px;
@@ -650,30 +681,38 @@ i.fa.fa-plus::before {
     margin-right: 0px;
     max-width: 100%;
   }
+
   .chart img {
     max-width: 100%;
   }
+
   input {
     width: 200px;
     padding-left: 10px;
     height: 30px;
   }
+
   .input-border {
     width: 60%;
   }
+
   .cell h5 {
     font-size: 20px;
   }
+
   .cell {
     padding-top: 15px;
   }
+
   .statistics {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .chart {
     padding-top: 10px;
   }
+
   .navigation-bottom {
     border: #D3D3D3 0.5px solid;
     bottom: 0;
@@ -684,7 +723,7 @@ i.fa.fa-plus::before {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     max-width: 100%;
     position: fixed;
     height: 40px;
@@ -693,14 +732,17 @@ i.fa.fa-plus::before {
     margin-left: 0;
     margin-right: 0;
   }
+
   .navigation-bottom img {
     padding: 0;
     margin: 0;
     margin-top: 5px;
   }
+
   .navigation-bottom .hamburger {
     padding-top: 10px;
   }
+
   .navigation-bottom .col {
     border-right: #D3D3D3 0.5px solid;
     display: -webkit-box;
@@ -711,49 +753,57 @@ i.fa.fa-plus::before {
     padding-left: 0;
     padding-right: 0;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .icon-navigation {
     height: 20px;
     width: 20px;
     -webkit-filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
-            filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+    filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
   }
+
   .navigation-bottom .col:hover a {
     -webkit-filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
-            filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
+    filter: invert(42%) sepia(73%) saturate(742%) hue-rotate(152deg) brightness(104%) contrast(105%);
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
+
   .list-of-links li {
     margin-left: 0;
     margin-right: 0;
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .list-of-links li p {
     font-size: 20px;
     font-weight: 300;
   }
+
   .list-of-links li a {
     font-size: 20px;
   }
+
   .list-of-links li img {
     width: 20px;
     height: 20px;
   }
+
   .list-of-links {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 0;
   }
+
   .btn .fa-plus {
     font-size: 10px;
     margin-top: 0;
   }
+
   .last-btn {
     padding-bottom: 20px;
   }
 }
-/*# sourceMappingURL=style.css.map */
